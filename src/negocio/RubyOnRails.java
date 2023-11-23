@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class RubyOnRails extends Planetas {
 	ArrayList<Orbita> posicoesOrbita;
 
 	public RubyOnRails(Plano plano) {
-		super(3, "Ruby on Rails", 8, 5, plano, "R", 2);
+		super(3, "Ruby on Rails", 8, 5, plano, new ImageIcon("imagens/ruby.png"), 2);
 
 		posicoesOrbita = new ArrayList<>();
 

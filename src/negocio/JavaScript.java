@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class JavaScript extends Planetas {
 	ArrayList<Orbita> posicoesOrbita;
 
 	public JavaScript(Plano plano) {
-		super(2, "JavaScript", 8, 6, plano, "JS",3);
+		super(2, "JavaScript", 8, 6, plano, new ImageIcon("imagens/javascript.png"),3);
 
 		posicoesOrbita = new ArrayList<>();
 

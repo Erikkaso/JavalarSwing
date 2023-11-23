@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class Python extends Planetas {
 	ArrayList<Orbita> posicoesOrbita;
 
 	public Python(Plano plano) {
-		super(1, "Python", 8, 7, plano, "P",4);
+		super(1, "Python", 8, 7, plano, new ImageIcon("imagens/python.png"),4);
 
 		posicoesOrbita = new ArrayList<>();
 

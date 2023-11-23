@@ -63,7 +63,7 @@ public class FuncaoBotoes implements ActionListener {
 		}
 
 		else if (e.getSource() == central.gravarRelatorio) {
-			DadosRelatorio dr = new DadosRelatorio("Carneiro", 538121, diretorio, central.painelPlano.p);
+			DadosRelatorio dr = new DadosRelatorio("Pedro Eric Carneiro", 538121, diretorio, central.painelPlano.p);
 			System.out.println(diretorio);
 			dr.inserir(dr);
 		}

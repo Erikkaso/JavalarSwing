@@ -3,12 +3,15 @@ package negocio;
 import java.awt.Color;
 import java.util.Random;
 
+import javax.swing.ImageIcon;
+
 public class Bug {
 
 	public int posicaox;
 	public int posicaoy;
 	public Plano plano;
-	public String imagem;
+//	public String imagem;
+	public ImageIcon icone;
 
 	Random gerador = new Random();
 
@@ -18,7 +21,7 @@ public class Bug {
 		this.posicaoy = gerador.nextInt(15) + 1;
 
 		this.plano = plano;
-		this.imagem = "B";
+		this.icone = new ImageIcon("imagens/bug.png");
 
 		Celula aux = null;
 		for (int i = 0; i < plano.listaCelulas.size(); i++) {
@@ -29,8 +32,8 @@ public class Bug {
 					this.posicaoy = gerador.nextInt(15) + 1;
 				}
 				plano.listaCelulas.get(i).bug = this;
-				plano.listaCelulas.get(i).imagem = this.imagem;
-				plano.listaCelulas.get(i).label.setText(plano.listaCelulas.get(i).imagem);
+				plano.listaCelulas.get(i).icone = this.icone;
+				plano.listaCelulas.get(i).label.setIcon(plano.listaCelulas.get(i).icone);
 				plano.listaCelulas.get(i).label.setForeground(Color.red);
 			}
 		}

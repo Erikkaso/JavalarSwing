@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class C extends Planetas{
 	ArrayList<Orbita> posicoesOrbita;
 	
 	public C(Plano plano) {
-		super(7, "C", 8, 1, plano, "C",10);
+		super(7, "C", 8, 1, plano, new ImageIcon("imagens/c.png"),10);
 	
 		posicoesOrbita = new ArrayList<>();
 			

@@ -2,6 +2,8 @@ package negocio;
 import java.awt.Color;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 
 public abstract class Planetas implements Movimento {
 
@@ -10,7 +12,8 @@ public abstract class Planetas implements Movimento {
 	public int posicaox;
 	public int posicaoy;
 	public Plano plano;
-	private String imagem;
+	//private String imagem;
+	public ImageIcon icone;
 	public float rotacao;
 	public int anos;
 	public int velocidade;
@@ -20,13 +23,13 @@ public abstract class Planetas implements Movimento {
 	public int colisaoBugs;
 	public int colisaoDevs;
 
-	public Planetas(int id, String nome, int posicaox, int posicaoy, Plano plano, String imagem, int velocidade) {
+	public Planetas(int id, String nome, int posicaox, int posicaoy, Plano plano, ImageIcon icone, int velocidade) {
 		this.id = id;
 		this.nome = nome;
 		this.posicaox = posicaox;
 		this.posicaoy = posicaoy;
 		this.plano = plano;
-		this.imagem = imagem;
+		this.icone = icone;
 		this.velocidade = velocidade;
 		this.valor=0;
 		this.colisaoDevs = 0;
@@ -36,8 +39,8 @@ public abstract class Planetas implements Movimento {
 			Celula aux = plano.listaCelulas.get(i);
 			if (aux.posicaoX == posicaox && aux.posicaoY == posicaoy) {
 				plano.listaCelulas.get(i).planeta = this;
-				plano.listaCelulas.get(i).imagem = this.imagem;
-				plano.listaCelulas.get(i).label.setText(plano.listaCelulas.get(i).imagem);
+				plano.listaCelulas.get(i).icone = this.icone;
+				plano.listaCelulas.get(i).label.setIcon(plano.listaCelulas.get(i).icone);
 				plano.listaCelulas.get(i).label.setForeground(Color.blue);
 			}
 		}
@@ -101,8 +104,8 @@ public abstract class Planetas implements Movimento {
 			for (int i = 0; i < plano.listaCelulas.size(); i++) {
 				if (plano.listaCelulas.get(i).planeta != null && plano.listaCelulas.get(i).planeta.id == id) {
 					plano.listaCelulas.get(i).planeta = null;
-					plano.listaCelulas.get(i).imagem = "";
-					plano.listaCelulas.get(i).label.setText(plano.listaCelulas.get(i).imagem);		
+					plano.listaCelulas.get(i).icone = null;
+					plano.listaCelulas.get(i).label.setIcon(plano.listaCelulas.get(i).icone);		
 				}
 
 				if (plano.listaCelulas.get(i).posicaoX == x && plano.listaCelulas.get(i).posicaoY == y) {
@@ -110,8 +113,8 @@ public abstract class Planetas implements Movimento {
 					posicaoy = plano.listaCelulas.get(i).posicaoY;
 
 					plano.listaCelulas.get(i).planeta = this;
-					plano.listaCelulas.get(i).imagem = imagem;
-					plano.listaCelulas.get(i).label.setText(plano.listaCelulas.get(i).imagem);
+					plano.listaCelulas.get(i).icone = icone;
+					plano.listaCelulas.get(i).label.setIcon(plano.listaCelulas.get(i).icone);
 					plano.listaCelulas.get(i).label.setForeground(Color.blue);
 
 					colisaoDesenvolvedorBug(plano.listaCelulas.get(i), posicaox, posicaoy);
@@ -126,7 +129,7 @@ public abstract class Planetas implements Movimento {
 	public void colisaoDesenvolvedorBug(Celula aux, int x, int y) {
 		if (aux.desenvolvedor != null && aux.desenvolvedor.posicaox == x && aux.desenvolvedor.posicaoy == y) {
 			this.velocidade++;
-			aux.desenvolvedor.imagem = "-";
+			aux.desenvolvedor.icone = null;
 			aux.desenvolvedor = null;
 	//		plano.quantidadeDesenvolvedores--;
 			plano.listaDesenvolvedor.remove(aux.desenvolvedor);
@@ -136,7 +139,7 @@ public abstract class Planetas implements Movimento {
 
 		if (aux.bug != null && aux.bug.posicaox == x && aux.bug.posicaoy == y) {
 			this.velocidade--;
-			aux.bug.imagem = "-";
+			aux.bug.icone = null;
 			aux.bug = null;
 	//		plano.quantidadeBugs--;
 			plano.listaBug.remove(aux.bug);
@@ -146,7 +149,7 @@ public abstract class Planetas implements Movimento {
 		
 		if (this.velocidade == 0) {
 			aux.planeta = null;
-			aux.imagem = "-";
+			aux.icone = null;
 		}
 	}
 }

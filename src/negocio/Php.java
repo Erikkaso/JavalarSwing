@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class Php extends Planetas {
 	ArrayList<Orbita> posicoesOrbita;
 
 	public Php(Plano plano) {
-		super(4, "PHP", 8, 4, plano, "Php",2);
+		super(4, "PHP", 8, 4, plano, new ImageIcon("imagens/php.png"),2);
 		
 		posicoesOrbita = new ArrayList<>();
 		

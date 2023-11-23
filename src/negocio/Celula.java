@@ -3,13 +3,15 @@ package negocio;
 //import robo.Bug;
 //import robo.Robo;
 
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 public class Celula {
 	public int posicaoX;
 	public int posicaoY;
 	public int id;
-	public String imagem;
+//	public String imagem;
+	public ImageIcon icone;
 	public JLabel label;
 	public Planetas planeta;	
 	public Desenvolvedor desenvolvedor;
@@ -22,7 +24,7 @@ public class Celula {
 		this.label = label;
 		label.setHorizontalTextPosition(JLabel.CENTER);
 		desenvolvedor = null;
-		imagem = "";
+		icone = null;
 		bug = null;
 	}
 }

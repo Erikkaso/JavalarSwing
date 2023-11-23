@@ -25,11 +25,14 @@ public class JPrincipal  extends JFrame{
 		
 	    PainelBotoes painelBotoes = new PainelBotoes(painelPlano); 	
 		
+	    this.setTitle("Sistema Javalar");
 		this.setSize(900, 800);
 		this.setBackground(Color.LIGHT_GRAY);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
 
 	//	this.add(painelBotoes, BorderLayout.EAST);
+		
 
 		painelPlano.setVisible(true);
 

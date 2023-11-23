@@ -1,11 +1,13 @@
 package negocio;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 public class CSharp extends Planetas {
 	ArrayList<Orbita> posicoesOrbita;
 
 	public CSharp(Plano plano) {
-		super(5, "C#", 8, 3, plano, "C#",1);
+		super(5, "C#", 8, 3, plano, new ImageIcon("imagens/cshar.png"),1);
 
 		posicoesOrbita = new ArrayList<>();
 		
