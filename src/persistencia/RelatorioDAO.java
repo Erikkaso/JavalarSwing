@@ -71,7 +71,6 @@ public class RelatorioDAO {
 			int auxt = 4;
 			for (int j = 1; j <= 7; j++) {
 				inserir.setInt(auxt, dr.planets.get(j).colisaoBugs);
-				System.out.println(dr.planets.get(j).nome+" - "+dr.planets.get(j).colisaoBugs);
 				auxt++;
 			}
 
