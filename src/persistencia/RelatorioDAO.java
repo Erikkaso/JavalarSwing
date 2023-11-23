@@ -16,8 +16,8 @@ public class RelatorioDAO {
 	public ArrayList<DadosRelatorio> selecionarTodosDadosRelatorios() {
 		ArrayList<DadosRelatorio> dadosRelatorios = new ArrayList<DadosRelatorio>();
 		String indices[] = enviarReport().split(", ");
-		String [] informacoes = new String[indices.length];
-		
+		String[] informacoes = new String[indices.length];
+
 		try {
 			Connection conexao = new Conexao().getConexao();
 
@@ -27,18 +27,18 @@ public class RelatorioDAO {
 			while (dados.next()) {
 				String nome = dados.getString("nome");
 				int matricula = dados.getInt("matricula");
-				String nome_arquivo	= dados.getString("nome_arquivo");
-				
-				for(int i=0;i<indices.length-1;i++) {
-				informacoes[i] = dados.getString(indices[i]);
+				String nome_arquivo = dados.getString("nome_arquivo");
+
+				for (int i = 0; i < indices.length - 1; i++) {
+					informacoes[i] = dados.getString(indices[i]);
 				}
-				informacoes[indices.length-1] = dados.getString("dev_q4");
+				informacoes[indices.length - 1] = dados.getString("dev_q4");
 
 				DadosRelatorio dr = new DadosRelatorio(nome, matricula, nome_arquivo, informacoes);
 				dadosRelatorios.add(dr);
 			}
 			conexao.close();
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -47,8 +47,6 @@ public class RelatorioDAO {
 	}
 
 	public void inserir(DadosRelatorio dr) {
-//		String test = "insert into javalar (nome, matricula, nome_arquivo";
-//		test += enviarReport() + ") values";
 
 		try {
 			String interString = "(";
@@ -59,15 +57,14 @@ public class RelatorioDAO {
 					interString += "?)";
 			}
 
-//			test += interString;
-
 			Connection conexao = new Conexao().getConexao();
 
-			PreparedStatement inserir = conexao.prepareStatement("insert into javalar (nome, matricula, nome_arquivo, " + enviarReport() + ") values" + interString);
+			PreparedStatement inserir = conexao.prepareStatement(
+					"insert into javalar (nome, matricula, nome_arquivo, " + enviarReport() + ") values" + interString);
 			inserir.setString(1, dr.getNome());
 			inserir.setInt(2, dr.getMatricula());
 			inserir.setString(3, dr.getNome_arquivo());
-			
+
 			int auxt = 4;
 			for (int j = 1; j <= 7; j++) {
 				inserir.setInt(auxt, dr.planets.get(j).colisaoBugs);
@@ -105,12 +102,15 @@ public class RelatorioDAO {
 				inserir.setInt(auxt, dr.plano.devQ[j]);
 				auxt++;
 			}
-			 inserir.executeUpdate();
+			inserir.executeUpdate();
+
+			JOptionPane.showMessageDialog(null, "Relatorio Enviado!");
 
 			conexao.close();
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, "Nao ha arquivos para ser lidos.", "Aviso",JOptionPane.WARNING_MESSAGE);
-		//	 e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Nao ha arquivos para ser lidos.", "Aviso",
+					JOptionPane.WARNING_MESSAGE);
+			// e.printStackTrace();
 		}
 	}
 

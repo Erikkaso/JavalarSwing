@@ -2,8 +2,6 @@ package negocio;
 
 import java.awt.Color;
 import java.util.Random;
-
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class Desenvolvedor {
@@ -11,7 +9,6 @@ public class Desenvolvedor {
 	public int posicaox;
 	public int posicaoy;
 	public Plano plano;
-//	public String imagem;
 	public ImageIcon icone;
 
 	Random gerador = new Random();

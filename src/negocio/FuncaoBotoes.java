@@ -4,13 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 import persistencia.LerDados;
 import view.PainelBotoes;
-import view.PainelPlano;
 
 public class FuncaoBotoes implements ActionListener {
 	private PainelBotoes central;

@@ -12,7 +12,6 @@ public abstract class Planetas implements Movimento {
 	public int posicaox;
 	public int posicaoy;
 	public Plano plano;
-	//private String imagem;
 	public ImageIcon icone;
 	public float rotacao;
 	public int anos;
@@ -86,8 +85,6 @@ public abstract class Planetas implements Movimento {
 
 	public void contarGiro(ArrayList<Orbita> posicoesOrbita, int avanco, int unidade, int limite, String img, int id) {
 		int movimento = 0;
-//		if (avanco == 0)
-//			avanco = 1;
 		movimento += unidade * avanco;
 
 		while (movimento >= limite) {
@@ -118,9 +115,6 @@ public abstract class Planetas implements Movimento {
 					plano.listaCelulas.get(i).label.setForeground(Color.blue);
 
 					colisaoDesenvolvedorBug(plano.listaCelulas.get(i), posicaox, posicaoy);
-
-//					System.out.println("a velocidade do planeta " + this.nome + " eh:" + this.velocidade
-//							+ " se passaram " + this.rotacao + " horas e " + this.anos + " ano(s)");
 				}
 			}
 		}
@@ -131,7 +125,6 @@ public abstract class Planetas implements Movimento {
 			this.velocidade++;
 			aux.desenvolvedor.icone = null;
 			aux.desenvolvedor = null;
-	//		plano.quantidadeDesenvolvedores--;
 			plano.listaDesenvolvedor.remove(aux.desenvolvedor);
 			this.colisaoDevs++;
 			System.out.println("\u001B[32m" + aux.planeta.nome + " foi aprimorado!!" + "\u001B[0m");
@@ -141,7 +134,6 @@ public abstract class Planetas implements Movimento {
 			this.velocidade--;
 			aux.bug.icone = null;
 			aux.bug = null;
-	//		plano.quantidadeBugs--;
 			plano.listaBug.remove(aux.bug);
 			this.colisaoBugs++;
 			System.out.println("\u001B[31m" + aux.planeta.nome + " foi atacado!!" + "\u001B[0m");

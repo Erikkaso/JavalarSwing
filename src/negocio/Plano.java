@@ -12,9 +12,7 @@ public class Plano {
 	public ArrayList<Celula> listaCelulas;
 	public ArrayList<Planetas> listaPlanetas = new ArrayList<>();
 	public ArrayList<Bug> listaBug = new ArrayList<>();
-//	int quantidadeBugs;
 	public ArrayList<Desenvolvedor> listaDesenvolvedor = new ArrayList<>();
-//	int quantidadeDesenvolvedores;
 	public int[] bugQ;
 	public int[] devQ;
 
@@ -28,7 +26,6 @@ public class Plano {
 		for (int i = 1; i <= 15; i++) {
 			for (int j = 1; j <= 15; j++) {
 				JLabel celulaLabel = new JLabel();
-				// celulaLabel.setForeground(Color.BLUE);////****
 				celulaLabel.setPreferredSize(new Dimension(40, 40));
 				celulaLabel.setHorizontalAlignment(JLabel.CENTER);
 				celulaLabel.setBorder(borda);

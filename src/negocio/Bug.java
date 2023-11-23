@@ -10,7 +10,6 @@ public class Bug {
 	public int posicaox;
 	public int posicaoy;
 	public Plano plano;
-//	public String imagem;
 	public ImageIcon icone;
 
 	Random gerador = new Random();
