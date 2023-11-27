@@ -61,6 +61,7 @@ public class RelatorioDAO {
 
 			PreparedStatement inserir = conexao.prepareStatement(
 					"insert into javalar (nome, matricula, nome_arquivo, " + enviarReport() + ") values" + interString);
+			
 			inserir.setString(1, dr.getNome());
 			inserir.setInt(2, dr.getMatricula());
 			inserir.setString(3, dr.getNome_arquivo());
@@ -102,7 +103,7 @@ public class RelatorioDAO {
 				inserir.setInt(auxt, dr.plano.devQ[j]);
 				auxt++;
 			}
-			inserir.executeUpdate();
+			inserir.execute();
 
 			JOptionPane.showMessageDialog(null, "Relatorio Enviado!");
 

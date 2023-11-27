@@ -6,3 +6,9 @@
 
 555989 - Pablo, C, C++, 1, 2, 1120, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 1 - C#: 1 - C++: 0 - C: 8, 103040, 107520, 23348640, 281120
 
+555989 - Pablo, C, Python, 3, 1, 1791, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 16119, 8955, 3420810, 25074
+
+555989 - Pablo, C, Python, 3, 1, 2483, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 22347, 12415, 4742530, 34762
+
+555989 - Pablo, C, Python, 3, 1, 2700, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 24300, 13500, 5157000, 37800
+

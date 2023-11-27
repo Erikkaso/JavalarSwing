@@ -72,7 +72,6 @@ public class DadosRelatorio {
 
 	public void enviarDados(ArrayList<DadosRelatorio> listaDados) {
 		Escrever e = new Escrever();
-
 		ArrayList<String> nomes = new ArrayList<>();
 		nomes.add(listaDados.get(0).getNome());
 		String[] planetas = { "Python", "Javascript", "Ruby", "Php", "C#", "C++", "C" };
