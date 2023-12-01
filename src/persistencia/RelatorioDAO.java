@@ -1,7 +1,6 @@
 package persistencia;
 
 import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
 
 import negocio.DadosRelatorio;
@@ -17,14 +16,14 @@ public class RelatorioDAO {
 		ArrayList<DadosRelatorio> dadosRelatorios = new ArrayList<DadosRelatorio>();
 		String indices[] = enviarReport().split(", ");
 		String[] informacoes = new String[indices.length];
-
 		try {
 			Connection conexao = new Conexao().getConexao();
 
-			String query = "select * from javalar order by id desc";
+			String query = "select * from javalar order by matricula asc";
 			ResultSet dados = conexao.prepareStatement(query).executeQuery();
 
 			while (dados.next()) {
+
 				String nome = dados.getString("nome");
 				int matricula = dados.getInt("matricula");
 				String nome_arquivo = dados.getString("nome_arquivo");

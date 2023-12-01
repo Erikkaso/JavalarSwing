@@ -2,6 +2,7 @@ package negocio;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 import persistencia.Escrever;
 import persistencia.RelatorioDAO;
@@ -71,6 +72,7 @@ public class DadosRelatorio {
 	}
 
 	public void enviarDados(ArrayList<DadosRelatorio> listaDados) {
+
 		Escrever e = new Escrever();
 		ArrayList<String> nomes = new ArrayList<>();
 		nomes.add(listaDados.get(0).getNome());
@@ -88,20 +90,20 @@ public class DadosRelatorio {
 
 		////////// ********* 1 ********//////////////////
 		for (DadosRelatorio dadosRelatorio : listaDados) {// recebendo os nomes
+			
 			if (nomes.contains(dadosRelatorio.getNome()) == false) {
 				nomes.add(dadosRelatorio.getNome());
-			}
-
+			}		
+			
 			for (int i = 0; i < 7; i++) {// 14 21 -> indice da velocidade dos planetas
-				if (Integer.parseInt(dadosRelatorio.infos[i + 14]) == 0) {
+				if (Integer.parseInt(dadosRelatorio.infos[(i + 14)]) == 0) {
 					contExplosao[i]++;
 				}
-
 				velocidadeMediaPlanetas[i] += Integer.parseInt(dadosRelatorio.infos[i + 14]); // obter velocidade media
 																								// de cada planeta
 
-				horastotais += Integer.parseInt(dadosRelatorio.infos[i + 21]);// 10 - horas totais dos planetas
-				anostotais += Integer.parseInt(dadosRelatorio.infos[i + 28]);// 11 - anos totais dos planetas
+				horastotais += Integer.parseInt(dadosRelatorio.infos[(i + 21)]);// 10 - horas totais dos planetas
+				anostotais += Integer.parseInt(dadosRelatorio.infos[(i + 28)]);// 11 - anos totais dos planetas
 			}
 
 			int maiorValor = Integer.parseInt(dadosRelatorio.infos[14]);// valor inicial de vida
@@ -115,20 +117,20 @@ public class DadosRelatorio {
 			planetaMaisViveu = planetas[encontrarIndiceMaiorValor(contExplosao)];
 //////////////////////////////////////////////////////////////////////////////4;5///////////////////////////
 
-			for (int i = 35; i < 43; i++) {
+			for (int i = 35; i < 43; i++) {//somar bugs e devs
 				if (i < 39)
-					bugSom[i - 35] += Integer.parseInt(dadosRelatorio.infos[i]);
+					bugSom[(i - 35)] += Integer.parseInt(dadosRelatorio.infos[i]);
 
 				else
-					devSom[i - 39] += Integer.parseInt(dadosRelatorio.infos[i]);
+					devSom[(i - 39)] += Integer.parseInt(dadosRelatorio.infos[i]);
 			}
 
 		}
 		int maxContagem = 0;
-
+		int aux=0;
 		for (String nomeUnico : nomes) {/// olhar nome mais frequente
+			aux++;
 			int contagem = contarOcorrencias(nomeUnico, listaDados);
-
 			if (contagem > maxContagem) {
 				maxContagem = contagem;
 				nomeMaisRepetido = nomeUnico;

@@ -11,12 +11,13 @@ public class JPrincipal extends JFrame {
 
 	private PainelPlano painelPlano;
 	private Plano plano;
+	private PainelBotoes painelBotoes;
 
 	public JPrincipal() {
 		Plano plano = new Plano();
 		painelPlano = new PainelPlano(plano);
 
-		PainelBotoes painelBotoes = new PainelBotoes(painelPlano);
+		painelBotoes = new PainelBotoes(painelPlano);
 
 		this.setTitle("Sistema Javalar");
 		this.setSize(900, 800);

@@ -1,6 +1,5 @@
 package view;
 
-import persistencia.Conexao;
 
 public class Main {
 

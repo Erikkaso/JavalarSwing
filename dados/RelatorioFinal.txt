@@ -12,3 +12,51 @@
 
 555989 - Pablo, C, Python, 3, 1, 2700, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 24300, 13500, 5157000, 37800
 
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 3, 1, 3443, Python: 4 - Javascript: 2 - Ruby: 2 - Php: 2 - C#: 1 - C++: 2 - C: 10, 30987, 17215, 6576130, 48202
+
+555989 - Pablo, C, Python, 4, 4, 3444, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 533820, 526932, 8775312, 4759608
+
+555989 - Pablo, C, Python, 4, 4, 3445, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 533975, 527085, 8777860, 4760990
+
+555989 - Pablo, C, Python, 4, 4, 3445, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 533975, 527085, 8777860, 4760990
+
+555989 - Pablo, C, Python, 4, 4, 3445, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 533975, 527085, 8777860, 4760990
+
+555989 - Pablo, C, Python, 4, 4, 3552, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 550560, 543456, 9050496, 4908864
+
+555989 - Pablo, C, Python, 4, 4, 3552, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 550560, 543456, 9050496, 4908864
+
+555989 - Pablo, C, Python, 4, 4, 3559, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 551645, 544527, 9068332, 4918538
+
+555989 - Pablo, C, Python, 4, 4, 3561, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 551955, 544833, 9073428, 4921302
+
+555989 - Pablo, C, Python, 4, 4, 3574, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 553970, 546822, 9106552, 4939268
+
+555989 - Pablo, C, Python, 4, 4, 3575, Python: 4 - Javascript: 2 - Ruby: 1 - Php: 2 - C#: 2 - C++: 2 - C: 10, 554125, 546975, 9109100, 4940650
+
+554397 - José Vanderlei Furtuna Tomé, Javascript, Python, 1, 1, 10606, Python: 0 - Javascript: 1 - Ruby: 1 - Php: 0 - C#: 1 - C++: 0 - C: 0, 21212, 21212, 42424, 42424
+
+555989 - Pablo, C, C++, 1, 1, 204928, Python: 8 - Javascript: 3 - Ruby: 4 - Php: 2 - C#: -1 - C++: 0 - C: 10, 0, 0, 107997056, 20082944
+
+
+
+555989 - Pablo, C, C++, 1, 1, 205029, Python: 8 - Javascript: 3 - Ruby: 4 - Php: 2 - C#: -1 - C++: 0 - C: 10, 0, 0, 108050283, 20092842
+
